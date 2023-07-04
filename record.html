@@ -55,7 +55,29 @@
                 <p>nc ac nulla dui. Nulla facilisi:</p>
             </div>
 
-            <div class="row">
+            <div class="row" id="showDateWeight">
+
+                <div class="col-sm-12 col-md-3 col-lg-3">
+                    <div class="card mb-3 record__card" style="max-width: 18rem;">
+                        <div class="card-header bg-light"><h5>Person name</h5></div>
+                        <div class="card-body">
+                          <p class="card-text" id="showDate"><strong>Date: </strong>xx.xx.xxxx</p>
+                          <p class="card-text" id="showWeight"><strong>weight: </strong>xx kg</p>
+                        </div>
+                        <div class="card-footer bg-light">
+                            <div class="d-flex justify-content-between">
+                                <div>
+                                    <button type="button" class="btn btn-primary" id="liveToastBtn"><i class="fa-regular fa-pen-to-square"></i></button>
+                                    <button type="button" class="btn btn-secondary" id="liveToastBtn"><i class="fa-solid fa-cloud-arrow-down"></i></button>
+                                </div>
+                                <div>
+                                    <button type="button" class="btn btn-danger" id="liveToastBtn"><i class="fa-solid fa-trash-can"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="col-sm-12 col-md-3 col-lg-3">
                     <div class="card mb-3 record__card" style="max-width: 18rem;">
                         <div class="card-header bg-light"><h5>Person name</h5></div>
@@ -76,26 +98,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-12 col-md-3 col-lg-3">
-                    <div class="card mb-3 record__card" style="max-width: 18rem;">
-                        <div class="card-header bg-light"><h5>Person name</h5></div>
-                        <div class="card-body">
-                          <p class="card-text"><strong>Date: </strong>xx.xx.xxxx</p>
-                          <p class="card-text"><strong>weight: </strong>xx kg</p>
-                        </div>
-                        <div class="card-footer bg-light">
-                            <div class="d-flex justify-content-between">
-                                <div>
-                                    <button type="button" class="btn btn-primary" id="liveToastBtn"><i class="fa-regular fa-pen-to-square"></i></button>
-                                    <button type="button" class="btn btn-secondary" id="liveToastBtn"><i class="fa-solid fa-cloud-arrow-down"></i></button>
-                                </div>
-                                <div>
-                                    <button type="button" class="btn btn-danger" id="liveToastBtn"><i class="fa-solid fa-trash-can"></i></button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+
                 <div class="col-sm-12 col-md-3 col-lg-3">
                     <!-- <div class="card mb-3 record__card" style="max-width: 18rem;">
                         <div class="card-header bg-light"><h5>Person name</h5></div>
@@ -147,7 +150,7 @@
                 <h1 class="mb-3">ger finibus purus vitae tortor convallis</h1>
                 <p>Mauris scelerisque, ex dui sed convallis</p>
             </div>
-            <form action="">
+            <form action="" id="myForm">
                 <label for="basic-url" class="form-label"><strong>Date*</strong></label>
                 <div class="input-group mb-3">
                     <input name="date" id="date" type="date" class="form-control" aria-describedby="basic-addon3" placeholder="23.06.2023">
@@ -166,7 +169,7 @@
                 <div>
                     <label for="basic-url" class="form-label"><strong>* Donec pellentesque</strong></label>
                 </div>
-                <button type="submit" class="btn btn-primary" disabled>Submit</button>
+                <button type="submit" class="btn btn-primary">Submit</button>
             </form>
         </div>
     </section>
