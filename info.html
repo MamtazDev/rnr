@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Info</title>
+
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="nav__inner">
+                <nav class="navbar navbar-expand-lg navbar-light  mb-3">
+                    <div class="container-fluid">
+                        <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="index.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="info.html">Info</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="record.html">Records</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="gallery.html">Gallery</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <section>
+        <div class="container">
+            <div class="mb-5">
+                <h1>Pellentesque nibh</h1>
+                <p>Mauris scelerisque, ex dui sed convallis</p>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 col-md-4 col-lg-4">
+                    <div class="card border-light text-dark mb-3 card__info">
+                        <div class="card-header bg-light"><h6>Donec pellentesque</h6></div>
+                        <div class="card-body">
+                            <p class="card-text">Aliquam placerat semper urna, dapibus tincidunt est viverra ut. Nullam eu ex lacinia, lacinia</p> 
+                            <br>
+                            <p>la massa. Integer eu enim eros. Interdum et ma</p>
+                        </div>
+                        <div class="card-footer bg-light">
+                            <button type="button" class="btn btn-primary" id="liveToastBtn">Error Show </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-4">
+                    <div class="card border-light text-dark mb-3 card__info">
+                        <div class="card-header bg-light"><h6>Donec pellentesque</h6></div>
+                        <div class="card-body">
+                            <p class="card-text">Aliquam placerat  viverra ut. Nullam eu ex lacinia, lacinia</p> 
+                            <br>
+                            <p>la massa. Integer eu enim eros. Interdum et ma</p>
+                        </div>
+                        <div class="card-footer bg-light card__footer">
+                            <button type="button" class="btn btn-primary">Aliquam placerat</button>
+                            <button type="button" class="btn btn-secondary">Aliqu placerat</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-4">
+                    <div class="card border-light text-dark mb-3 card__info">
+                        <div class="card-header bg-light"><h6>Donec pellentesque</h6></div>
+                        <div class="card-body">
+                            <p class="card-text">Aliquam placerat semper urna, dapibus tincidunt est viverra ut. Nullam eu ex lacinia, lacinia</p> 
+                            <br>
+                            <p>la massa. Integer eu enim eros. Interdum et ma</p>
+                        </div>
+                        <div class="card-footer bg-light">
+                            <button type="button" class="btn btn-primary">Aliquam placerat</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+    <div class="toast-container position-fixed bottom-0 start-0 p-3 text-white">
+        <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-body">
+                <span style="font-size: 20px;"><i class="fa-solid fa-circle-exclamation" style="margin-right: 10px;"></i>3 Errors</span>
+                <button type="button" class="toast_close__btn ms-3" data-bs-dismiss="toast" aria-label="Close">X</button>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>

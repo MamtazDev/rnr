@@ -1,0 +1,92 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+    margin: 0;
+}
+
+ul li{
+    list-style: none;
+    margin: 0;
+}
+.container{
+    width: 100%;
+}
+
+/* home page Start */
+
+/* banner Start */
+.card {
+    border: none ;
+}
+
+.banner__inner{
+    padding: 40px;
+}
+
+.card__home{
+    border-radius: 10px;
+}
+
+/* banner End */
+
+.info__inner{
+    background-color: #EFF0F4;
+    padding: 70px 50px;
+}
+/* home page End */
+
+/* info page Start */
+.card__info{
+    border: 1px solid rgb(230, 227, 227) !important;
+}
+
+
+.toast {
+    background-color: #FF5555; 
+}
+
+.toast-container{
+    width: 200px;
+}
+
+.toast_close__btn{
+    border: none;
+    background: transparent;
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+}
+/* info page End */
+
+
+/* record page Start */
+.record__card{
+    border: 1px solid rgb(230, 227, 227) !important;
+}
+.card__footer{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.card__footer button{
+    white-space: nowrap;
+}
+/* record page End */
+
+/* gallery Start */
+.gallery__card{
+    background-color: #ebeef2;
+    padding: 10px;
+}
+/* gallery End */
