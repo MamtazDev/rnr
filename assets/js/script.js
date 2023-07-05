@@ -18,67 +18,8 @@ document.querySelector(".your_class").addEventListener("keypress", function (evt
 });
 // for input number  field End
 
-// add date and weight
-// const formDataArray = [];
-// const showData = document.getElementById('showDateWeight');
 
-// function handleSubmit(event) {
-//     event.preventDefault(); 
-
-//     const dateValue = document.getElementById('date').value;
-//     const weightValue = document.getElementById('weight').value;
-  
-//     const formData = {
-//       date: dateValue,
-//       weight: weightValue,
-//     };
-  
-//     formDataArray.push(formData);
-  
-//     myForm.reset();
-
-//     localStorage.setItem('formDataArray', JSON.stringify(formDataArray));
-  
-//     console.log(formDataArray);
-//     showDateWeight(formDataArray);
-// }
-
-//   function showDateWeight(formDataArray){
-
-//     formDataArray.forEach(() => {
-        
-//         const addCol= document.createElement('div');
-    
-//         addCol.innerHTML = `
-//             <div class="col-sm-12 col-md-3 col-lg-3">
-//                 <div class="card mb-3 record__card" style="max-width: 18rem;">
-//                 <div class="card-header bg-light"><h5>Person name</h5></div>
-//                 <div class="card-body">
-//                     <p class="card-text" id="showDate"><strong>Date: </strong>${[formDataArray.date]}</p>
-//                     <p class="card-text" id="showWeight"><strong>Weight: </strong> kg</p>
-//                 </div>
-//                 <div class="card-footer bg-light">
-//                     <div class="d-flex justify-content-between">
-//                     <div>
-//                         <button type="button" class="btn btn-primary" id="liveToastBtn"><i class="fa-regular fa-pen-to-square"></i></button>
-//                         <button type="button" class="btn btn-secondary" id="liveToastBtn"><i class="fa-solid fa-cloud-arrow-down"></i></button>
-//                     </div>
-//                     <div>
-//                         <button type="button" class="btn btn-danger" id="liveToastBtn"><i class="fa-solid fa-trash-can"></i></button>
-//                     </div>
-//                     </div>
-//                 </div>
-//                 </div>
-//             </div>
-//         `;
-
-//     });
-//   }
-
-
-  
-//   myForm.addEventListener('submit', handleSubmit);
-
+//for add new date and weight
 const formDataArray = [];
 const showDataElement = document.getElementById('showDateWeight'); 
 const myForm = document.getElementById('myForm'); 
@@ -98,7 +39,7 @@ function handleSubmit(event) {
     formDataArray.push(formData);
     myForm.reset();
 
-    localStorage.setItem('formDataArray', JSON.stringify(formDataArray));
+    // localStorage.setItem('formDataArray', JSON.stringify(formDataArray));
 
     console.log(formDataArray);
     showDateWeight(formDataArray);
@@ -107,6 +48,8 @@ function handleSubmit(event) {
 function showDateWeight(formDataArray) {
     formDataArray.forEach((formData) => {
         const addCol = document.createElement('div');
+        addCol.classList.add('row');
+        // inject classname on addcol
         addCol.innerHTML = `
             <div class="col-sm-12 col-md-3 col-lg-3">
                 <div class="card mb-3 record__card" style="max-width: 18rem;">
@@ -129,8 +72,9 @@ function showDateWeight(formDataArray) {
                 </div>
             </div>
         `;
-
         showDataElement.appendChild(addCol); 
+        
+        localStorage.setItem('addCol', JSON.stringify(addCol));
     });
 }
 

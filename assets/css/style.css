@@ -1,7 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+
+
+
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
 h1,
@@ -12,6 +18,11 @@ h5,
 p {
     margin: 0;
 }
+h1{
+    font-size: 45px;
+    color: rgb(79, 79, 79);
+    line-height: 50px;
+}
 
 ul li{
     list-style: none;
@@ -20,6 +31,32 @@ ul li{
 .container{
     width: 100%;
 }
+
+/* nav css  */
+.logo{
+    font-size: 24px;
+    font-family: math;
+    align-items: center;
+    display: flex;
+
+}
+
+.nav_wraper{
+    background-color: rgb(235 227 227 / 21%);
+    box-shadow: -2px 7px 8px -7px rgba(212,205,205,0.75);
+    -webkit-box-shadow: -2px 7px 8px -7px rgba(212,205,205,0.75);
+    -moz-box-shadow: -2px 7px 8px -7px rgba(212,205,205,0.75);
+    font-size: 20px;
+}
+
+.nav-link:focus, .nav-link:hover {
+    color: rgb(175 27 27 / 88%);
+}
+
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+    color: rgb(175 27 27 / 88%);
+}
+/* nav css  */
 
 /* home page Start */
 
@@ -51,7 +88,7 @@ ul li{
 
 
 .toast {
-    background-color: #FF5555; 
+    background-color: #f87676; 
 }
 
 .toast-container{
@@ -71,17 +108,149 @@ ul li{
 /* record page Start */
 .record__card{
     border: 1px solid rgb(230, 227, 227) !important;
+    border-radius: 20px;
 }
-.card__footer{
+.card__footer__btn{
     display: flex;
     align-items: center;
     gap: 10px;
     flex-wrap: wrap;
+    
 }
 
-.card__footer button{
+
+.card__footer__btn button{
     white-space: nowrap;
+    padding: 5px 10px;
+    font-size: 15px;
 }
+
+
+.card__footer__inner button{
+    padding: 5px 8px;
+    font-size: 12px;
+}
+
+.heading__sub{
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: center;
+}
+
+.main__header{
+    text-align: center;
+}
+
+.sec__header{
+    font-size: 35px;
+    color: #9a5a05;
+    line-height: 30px;
+}
+
+.show_hight_weight{
+    padding: 15px 20px;
+    color: #ffffff;
+    background-color: rgb(102, 102, 102);
+    border-radius: 12px 12px 0px 0px !important;
+}
+
+.card__footer__inner{
+    border-radius: 0px 0px 12px 12px !important;
+}
+
+.rec__body{
+    padding: 15px 20px;
+    padding: 45px 20px;
+    background-color: #ffffff;
+}
+
+.record__header{  
+    margin-bottom: 70px;
+}
+
+.record_card__header{
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 20px;
+    /* color: #000000; */
+}
+
+.card__txt{
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 500;
+}
+
+.card__txt >span{
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.btn__edit{
+    background: #000000;
+    border: none;
+    color: white;
+}
+
+.btn__edit:hover{
+    background: #b4b4b4;
+    color: rgb(12, 0, 91);
+}
+
+.btn__delete{
+    background: #270101;
+    color: white;
+    font-size: 15px;
+}
+
+.btn__delete:hover{
+    background-color: #5d4e4e;
+    color: #f75b5b;
+}
+
+.btn__upload{
+    color: white;
+    font-size: 15px;
+    background-color: rgb(35, 35, 35);
+    border: none;
+}
+
+.btn__upload:hover{
+    background-color: rgb(208, 206, 206);
+    color: rgb(0, 0, 0);
+}
+
+.rec__un_p{
+    margin-top: 8px;
+    font-size: 15px;
+    line-height: 10px;
+    color: rgb(82, 82, 82);
+    font-weight: 600;
+}
+
+.save__record{
+    margin-bottom: 40px;
+}
+
+.label__txt{
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 600;
+}
+
+.btn__submit{
+    padding: 8px 18px;
+    font-size: 18px;
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.btn__submit:hover{
+    background-color: #dad7d7;;
+    color: #000;
+}
+
 /* record page End */
 
 /* gallery Start */
@@ -90,3 +259,6 @@ ul li{
     padding: 10px;
 }
 /* gallery End */
+
+
+
