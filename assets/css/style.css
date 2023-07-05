@@ -149,14 +149,14 @@ ul li{
 }
 
 .show_hight_weight{
-    padding: 15px 20px;
     color: #ffffff;
     background-color: rgb(102, 102, 102);
-    border-radius: 12px 12px 0px 0px !important;
+    border-radius: 20px 20px 0px 0px !important;
 }
 
 .card__footer__inner{
-    border-radius: 0px 0px 12px 12px !important;
+    border-radius: 0px 0px 20px 20px !important;
+    padding: 15px 30px;
 }
 
 .rec__body{
@@ -165,26 +165,31 @@ ul li{
     background-color: #ffffff;
 }
 
-.record__header{  
+.time__sec{
     margin-bottom: 70px;
 }
 
+.record__header{  
+    margin-bottom: 100px;
+}
+
 .record_card__header{
-    font-size: 25px;
+    font-size: 22px;
     font-weight: 600;
     line-height: 20px;
     /* color: #000000; */
+    padding: 12px 0px;
 }
 
 .card__txt{
-    font-size: 18px;
+    font-size: 16px;
     line-height: 20px;
     font-weight: 500;
 }
 
 .card__txt >span{
     font-weight: 600;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .btn__edit{
@@ -230,11 +235,14 @@ ul li{
 }
 
 .save__record{
-    margin-bottom: 40px;
+    margin-bottom: 100px;
 }
 
+.form__header{
+    margin-bottom: 70px;
+}
 .label__txt{
-    font-size: 18px;
+    font-size: 15px;
     line-height: 20px;
     font-weight: 600;
 }
@@ -244,13 +252,42 @@ ul li{
     font-size: 18px;
     background-color: #000000;
     color: #ffffff;
+    cursor: pointer;
 }
 
 .btn__submit:hover{
-    background-color: #dad7d7;;
-    color: #000;
+    background-color: #363636;;
+    color: #fff;
 }
 
+.upload__inner{
+    border: 2px dashed #5d4e4e;
+    border-radius: 20px;
+}
+
+.file-upload{
+    padding: 50px;
+    text-align: center;
+    font-size: 70px;
+}
+
+.file-upload>input {
+    display: none;
+}
+
+
+.bottom__mar{
+    margin-bottom: 100px;
+}
+
+.form-control:focus {
+    border-color: #000000;
+    box-shadow:none;
+}
+
+.input__form input{
+    padding: 10px 12px;
+}
 /* record page End */
 
 /* gallery Start */

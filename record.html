@@ -9,7 +9,6 @@
     
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>Records</title>
-
 </head>
 
 <body>
@@ -17,7 +16,7 @@
         <div class="container justify-content-between d-flex">
             <h1 class="logo">Logo</h1>
             <div class="nav__inner">
-                <nav class="navbar navbar-expand-lg navbar-light  mb-3">
+                <nav class="navbar navbar-expand-lg navbar-light  mb-3 ">
                     <div class="container-fluid">
                         <!-- <a class="navbar-brand" href="#">Navbar</a> -->
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -51,7 +50,7 @@
                 <p class="heading__sub">Mauris scelerisque, ex dui sed convallis</p>
             </div>
 
-            <div class="mb-5">
+            <div class="time__sec">
                 <h2 class="mb-3 sec__header main__header">Pellentesque nibh</h2>
                 <p class="heading__sub">nc ac nulla dui. Nulla facilisi:</p>
             </div>
@@ -99,6 +98,7 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="col-sm-12 col-md-3 col-lg-3">
                     <div class="card mb-3 record__card">
                         <div class="card-header show_hight_weight"><h5 class="record_card__header">Person name</h5></div>
@@ -119,6 +119,7 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="col-sm-12 col-md-3 col-lg-3">
                     <div class="card mb-3 record__card">
                         <div class="card-header show_hight_weight"><h5 class="record_card__header">Person name</h5></div>
@@ -141,41 +142,55 @@
                 </div>
 
             </div>
-            <p class="rec__un_p">finibus purus vitae tortor ger finibus purus vitae tortor</p>
         </div>
     </section>
 
-    <section>
+    <section class="bottom__mar">
         <div class="container mb-5">
-            <div class="mb-5">
-                <h2 class="mb-3 sec__header main__header">ger finibus purus vitae tortor convallis</h2>
+            <div class="form__header">
+                <h2 class="mb-3 sec__header main__header">Ger finibus purus vitae tortor convallis</h2>
                 <p class="heading__sub">Mauris scelerisque, ex dui sed convallis</p>
             </div>
-            <form action="" id="myForm">
-                <label for="basic-url" class="form-label label__txt">Date*</label>
-                <div class="input-group mb-3">
-                    <input name="date" id="date" type="date" class="form-control" aria-describedby="basic-addon3" placeholder="23.06.2023">
+            <form action="" id="myForm" class="input__form">
+                <div class="row mb-3">
+                    <div class="col-sm-12 col-md-6 col-lg6">
+                        <label for="basic-url" class="form-label label__txt">Date*</label><br>
+                        <div class="input-group mb-3">
+                            <input name="date" id="date" type="date" class="form-control" aria-describedby="basic-addon3" placeholder="23.06.2023">
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg6">
+                        <label for="basic-url" class="form-label label__txt">Your Weight in Kilogram*</label>
+                        <div class="input-group mb-3">
+                            <input name="weight" id="weight" type="number" class="form-control your_class" aria-describedby="basic-addon3"  onkeydown="return event.keyCode !== 69">
+                        </div>
+                    </div>
                 </div>
-    
-                <label for="basic-url" class="form-label label__txt">Your Weight in Kilogram*</label>
-                <div class="input-group mb-3">
-                    <input name="weight" id="weight" type="number" class="form-control your_class" aria-describedby="basic-addon3"  onkeydown="return event.keyCode !== 69">
-                </div>
-    
-                <label for="basic-url" class="form-label label__txt">Vitae tortor(Photo or PDF)*</label>
-                <div class="input-group mb-3">
-                    <input type="file" class="form-control mb-3" id="inputGroupFile02"  accept=".pdf">
+
+                <div>
+                    <div class="upload__inner mb-5">
+                        <div class="file-upload">
+                            <label for="file-input"  class="form-label">
+                                <i class="fa-solid fa-cloud-arrow-down"></i>
+                            </label>
+                            <input id="file-input" class="form-control" type="file" accept=".pdf" id="file-input" name="" />
+                           
+                          </div>
+                    </div>
                 </div>
                 
-                <div>
-                    <label for="basic-url" class="form-label label__txt">* Donec pellentesque</label>
-                </div>
-                <button type="submit" class="btn btn__submit">Submit</button>
+                <button type="submit" class="btn btn__submit w-100" id="upload-button">Submit</button>
             </form>
         </div>
     </section>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script src="./assets/js/script.js"></script>
+
+    <script>
+       
+
+    </script>
 </body>
 </html>
